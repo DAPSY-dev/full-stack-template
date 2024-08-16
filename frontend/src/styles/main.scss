@@ -1,0 +1,50 @@
+@charset "utf-8";
+/*! Force output above line by adding unicode charset: 🐈 */
+
+@import "./reset.scss";
+
+#root {
+  margin-inline: auto;
+  width: calc(100% - 32px);
+  max-width: 1440px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  padding: 8px 16px;
+}
+
+form {
+  margin-block-end: 24px;
+}
+
+h1 {
+  margin-block-end: 16px;
+  font-size: 32px;
+}
+
+h2 {
+  margin-block-end: 8px;
+  font-size: 24px;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+  padding: 8px 12px;
+}
+
+label {
+  display: block;
+  margin-block-end: 16px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: disc;
+  padding-inline-start: 16px;
+}
