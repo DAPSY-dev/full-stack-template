@@ -1,4 +1,4 @@
-# App
+# Full-Stack Template
 
 ## Scripts
 
