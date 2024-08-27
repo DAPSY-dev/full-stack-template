@@ -8,7 +8,7 @@ function App() {
     const controller = new AbortController();
     const { signal } = controller;
 
-    fetch(API_ENDPOINTS.getUsers, { signal })
+    fetch(API_ENDPOINTS.users, { signal })
       .then((response) => response.json())
       .then((data) => {
         setUsers(data);
@@ -59,7 +59,7 @@ function App() {
     <>
       <h1>Users</h1>
 
-      <form action={API_ENDPOINTS.createUser} method="POST" onSubmit={handleSubmit} autoComplete="off">
+      <form action={API_ENDPOINTS.users} method="POST" onSubmit={handleSubmit} autoComplete="off">
         <h2>Add new user</h2>
 
         <label htmlFor="username">
