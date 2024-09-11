@@ -3,6 +3,12 @@
 
 @import "./_reset.scss";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 #root {
   margin-inline: auto;
   width: calc(100% - 32px);
