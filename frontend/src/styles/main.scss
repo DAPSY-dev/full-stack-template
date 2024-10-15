@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*! Force output above line by adding unicode charset: 🐈 */
 
-@import "./_reset.scss";
+@use "./_reset.scss";
 
 *,
 *::before,
