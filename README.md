@@ -1,11 +1,31 @@
 # Full-Stack Template
 
+## Installation prerequisites
+
+- Node.js: `v20.18.0`
+
 ## Scripts
 
-Install: `npm install`
+Install:
 
-Start: `npm start`
+```sh
+npm install
+```
 
-Build: `npm run build`
+Start:
 
-Preview: `npm run preview`
+```sh
+npm start
+```
+
+Build:
+
+```sh
+npm run build
+```
+
+Preview:
+
+```sh
+npm run preview
+```
