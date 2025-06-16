@@ -1,5 +1,7 @@
 "use strict";
 
+require("dotenv").config();
+
 const path = require("path");
 const express = require("express");
 const cors = require("cors");
@@ -7,7 +9,7 @@ const sequelize = require("./models/database.js");
 const apiRoutes = require("./routes/api.js");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.APP_PORT;
 
 app.use(cors());
 app.use(express.json());
