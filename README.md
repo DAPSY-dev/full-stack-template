@@ -16,10 +16,10 @@ Install:
 npm install
 ```
 
-Start:
+Start (_dev_):
 
 ```sh
-npm start
+npm run dev
 ```
 
 Build:
@@ -28,13 +28,15 @@ Build:
 npm run build
 ```
 
-Preview:
+Start (_build_):
 
 ```sh
-npm run preview
+npm start
 ```
 
 Clean build files:
+
+> Remove generated build files
 
 ```sh
 npm run clean-build-files
@@ -42,18 +44,18 @@ npm run clean-build-files
 
 Favicon check (_dev_):
 
-> Start the app before running favicon check
+> Dev start the app before running favicon check
 
 ```sh
-npm run faviconCheck:dev
+npm run favicon-check-dev
 ```
 
 Favicon check (_build_):
 
-> Build and preview the app before running favicon check
+> Build start the app before running favicon check
 
 ```sh
-npm run faviconCheck:build
+npm run favicon-check-build
 ```
 
 ## Libraries and tools notes

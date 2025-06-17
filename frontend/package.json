@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview --port 5173 --host",
-    "faviconCheck": "npx realfavicon check http://localhost:5173"
+    "favicon-check": "npx realfavicon check http://localhost:5173"
   },
   "dependencies": {
     "react": "^18.3.1",
