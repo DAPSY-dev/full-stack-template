@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite --port 5173 --host",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview --host"
+    "preview": "vite preview --port 5173 --host",
+    "faviconCheck": "npx realfavicon check http://localhost:5173"
   },
   "dependencies": {
     "react": "^18.3.1",

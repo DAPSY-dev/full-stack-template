@@ -10,11 +10,13 @@
     "start-frontend": "cd ./frontend && npm run dev",
     "build": "npm run clean-build-files && npm run build-frontend && npm run copy-frontend-dist",
     "build-frontend": "cd ./frontend && npm run build",
+    "copy-frontend-dist": "copyfiles ./frontend/dist/**/* ./backend/src/public/ --up 2 --all --verbose",
+    "clean-build-files": "npm run clean-backend-public && npm run clean-frontend-dist",
     "clean-backend-public": "del-cli ./backend/src/public --verbose",
     "clean-frontend-dist": "del-cli ./frontend/dist --verbose",
-    "clean-build-files": "npm run clean-backend-public && npm run clean-frontend-dist",
-    "copy-frontend-dist": "copyfiles ./frontend/dist/**/* ./backend/src/public/ --up 2 --all --verbose",
-    "preview": "cd ./backend && npm run preview"
+    "preview": "cd ./backend && npm run preview",
+    "faviconCheck:dev": "cd ./frontend && npm run faviconCheck",
+    "faviconCheck:build": "npx realfavicon check http://localhost:3000"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",

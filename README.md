@@ -33,3 +33,29 @@ Preview:
 ```sh
 npm run preview
 ```
+
+Clean build files:
+
+```sh
+npm run clean-build-files
+```
+
+Favicon check (_dev_):
+
+> Start the app before running favicon check
+
+```sh
+npm run faviconCheck:dev
+```
+
+Favicon check (_build_):
+
+> Build and preview the app before running favicon check
+
+```sh
+npm run faviconCheck:build
+```
+
+## Libraries and tools notes
+
+- Favicon (Web App Manifest) generator: [RealFaviconGenerator](https://realfavicongenerator.net)
