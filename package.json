@@ -15,6 +15,9 @@
     "clean-build-files": "npm run clean-backend-public && npm run clean-frontend-dist",
     "clean-backend-public": "del-cli ./backend/src/public --verbose",
     "clean-frontend-dist": "del-cli ./frontend/dist --verbose",
+    "lint": "npm run lint-backend && npm run lint-frontend",
+    "lint-backend": "cd ./backend && npm run lint",
+    "lint-frontend": "cd ./frontend && npm run lint",
     "favicon-check-dev": "cd ./frontend && npm run favicon-check",
     "favicon-check-build": "npx realfavicon check http://localhost:3000"
   },

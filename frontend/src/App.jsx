@@ -59,7 +59,12 @@ function App() {
     <>
       <h1>Users</h1>
 
-      <form action={API_ENDPOINTS.users} method="POST" onSubmit={handleSubmit} autoComplete="off">
+      <form
+        action={API_ENDPOINTS.users}
+        method="POST"
+        onSubmit={handleSubmit}
+        autoComplete="off"
+      >
         <h2>Add new user</h2>
 
         <label htmlFor="username">

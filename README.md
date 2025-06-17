@@ -42,6 +42,12 @@ Clean build files:
 npm run clean-build-files
 ```
 
+Lint:
+
+```sh
+npm run lint
+```
+
 Favicon check (_dev_):
 
 > Dev start the app before running favicon check
