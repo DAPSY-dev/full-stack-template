@@ -1,5 +1,7 @@
-import { expect, test } from "vitest";
+import { describe, test, expect } from "vitest";
 
-test("1 == 1", () => {
-  expect(1).toBe(1);
+describe("main", () => {
+  test("1 == 1", () => {
+    expect(1).toBe(1);
+  });
 });
