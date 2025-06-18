@@ -67,14 +67,14 @@ function App() {
       >
         <h2>Add new user</h2>
 
-        <label htmlFor="username">
+        <label>
           Username
-          <input type="text" name="username" id="username" required />
+          <input type="text" name="username" autoComplete="username" required />
         </label>
 
-        <label htmlFor="email">
+        <label>
           Email
-          <input type="email" name="email" id="email" required />
+          <input type="email" name="email" autoComplete="email" required />
         </label>
 
         <button type="submit">Add</button>
