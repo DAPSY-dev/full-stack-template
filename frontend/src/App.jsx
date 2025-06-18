@@ -65,19 +65,26 @@ function App() {
         onSubmit={handleSubmit}
         autoComplete="off"
       >
-        <h2>Add new user</h2>
+        <fieldset>
+          <legend>New user</legend>
 
-        <label>
-          Username
-          <input type="text" name="username" autoComplete="username" required />
-        </label>
+          <label>
+            Username
+            <input
+              type="text"
+              name="username"
+              autoComplete="username"
+              required
+            />
+          </label>
 
-        <label>
-          Email
-          <input type="email" name="email" autoComplete="email" required />
-        </label>
+          <label>
+            Email
+            <input type="email" name="email" autoComplete="email" required />
+          </label>
 
-        <button type="submit">Add</button>
+          <button type="submit">Add</button>
+        </fieldset>
       </form>
 
       {users.length > 0 && (
