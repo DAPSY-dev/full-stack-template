@@ -18,6 +18,8 @@
     "lint": "npm run lint-backend && npm run lint-frontend",
     "lint-backend": "cd ./backend && npm run lint",
     "lint-frontend": "cd ./frontend && npm run lint",
+    "test-backend": "cd ./backend && npm run test",
+    "test-frontend": "cd ./frontend && npm run test",
     "favicon-check-dev": "cd ./frontend && npm run favicon-check",
     "favicon-check-build": "npx realfavicon check http://localhost:3000"
   },

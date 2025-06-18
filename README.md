@@ -48,6 +48,18 @@ Lint:
 npm run lint
 ```
 
+Test backend:
+
+```sh
+npm run test-backend
+```
+
+Test frontend:
+
+```sh
+npm run test-frontend
+```
+
 Favicon check (_dev_):
 
 > Dev start the app before running favicon check
