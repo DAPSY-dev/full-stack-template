@@ -2,7 +2,6 @@
 
 require("dotenv").config({ path: [".env.local", ".env"] });
 
-const path = require("path");
 const express = require("express");
 const cors = require("cors");
 const sequelize = require("./models/database.js");
@@ -24,7 +23,6 @@ sequelize
   .then(() => console.log("Database synced"))
   .catch((err) => console.error("Error syncing database:", err));
 
-app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/api", apiRoutes);
 
 const server = app.listen(PORT, () => {

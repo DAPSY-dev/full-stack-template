@@ -28,20 +28,6 @@ Build
 npm run build
 ```
 
-Start (_build_)
-
-```sh
-npm start
-```
-
-Clean build files
-
-> Remove generated build files
-
-```sh
-npm run clean-build-files
-```
-
 Lint
 
 ```sh
@@ -60,20 +46,20 @@ Test frontend
 npm run test-frontend
 ```
 
-Favicon check (_dev_)
+Preview
 
-> Dev start the app before running favicon check
+> Build the app before running preview
 
 ```sh
-npm run favicon-check-dev
+npm run preview
 ```
 
-Favicon check (_build_)
+Favicon check
 
-> Build start the app before running favicon check
+> Start the app before running favicon check
 
 ```sh
-npm run favicon-check-build
+npm run favicon-check
 ```
 
 ## Libraries and tools notes
