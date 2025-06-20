@@ -16,7 +16,7 @@ Install
 npm install
 ```
 
-Start (_dev_)
+Start dev
 
 ```sh
 npm run dev
@@ -66,9 +66,9 @@ npm run favicon-check
 
 - Favicon (Web App Manifest) generator: [RealFaviconGenerator](https://realfavicongenerator.net)
 
-## Deploy checklist
+## Deploy
 
-- Files are set up correctly
+- Check: files are set up correctly
 
   - `.env`
 
