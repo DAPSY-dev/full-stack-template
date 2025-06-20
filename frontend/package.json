@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "postinstall": "npx playwright install",
     "dev": "vite --port 5173 --host",
     "build": "vite build",
     "lint": "eslint .",

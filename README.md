@@ -10,31 +10,31 @@
 
 ## Scripts
 
-Install:
+Install
 
 ```sh
 npm install
 ```
 
-Start (_dev_):
+Start (_dev_)
 
 ```sh
 npm run dev
 ```
 
-Build:
+Build
 
 ```sh
 npm run build
 ```
 
-Start (_build_):
+Start (_build_)
 
 ```sh
 npm start
 ```
 
-Clean build files:
+Clean build files
 
 > Remove generated build files
 
@@ -42,25 +42,25 @@ Clean build files:
 npm run clean-build-files
 ```
 
-Lint:
+Lint
 
 ```sh
 npm run lint
 ```
 
-Test backend:
+Test backend
 
 ```sh
 npm run test-backend
 ```
 
-Test frontend:
+Test frontend
 
 ```sh
 npm run test-frontend
 ```
 
-Favicon check (_dev_):
+Favicon check (_dev_)
 
 > Dev start the app before running favicon check
 
@@ -68,7 +68,7 @@ Favicon check (_dev_):
 npm run favicon-check-dev
 ```
 
-Favicon check (_build_):
+Favicon check (_build_)
 
 > Build start the app before running favicon check
 
@@ -79,3 +79,15 @@ npm run favicon-check-build
 ## Libraries and tools notes
 
 - Favicon (Web App Manifest) generator: [RealFaviconGenerator](https://realfavicongenerator.net)
+
+## Deploy checklist
+
+- Files are set up correctly
+
+  - `.env`
+
+  - `robots.txt`
+
+  - `site.webmanifest`
+
+  - `sitemap.xml`
