@@ -34,24 +34,18 @@ Lint
 npm run lint
 ```
 
-Test backend
+Test
 
 ```sh
-npm run test-backend
+npm run test
 ```
 
-Test frontend
+Start prod
+
+> Build the app before starting prod
 
 ```sh
-npm run test-frontend
-```
-
-Preview
-
-> Build the app before running preview
-
-```sh
-npm run preview
+npm run serve
 ```
 
 Favicon check
@@ -59,7 +53,7 @@ Favicon check
 > Start the app before running favicon check
 
 ```sh
-npm run favicon-check
+npm run faviconCheck
 ```
 
 ## Libraries and tools notes
