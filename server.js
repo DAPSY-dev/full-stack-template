@@ -27,7 +27,7 @@ async function createServer() {
     .then(() => console.log("Database synced"))
     .catch((err) => console.error("Error syncing database:", err));
 
-  app.use("/api", apiRoutes);
+  app.use(process.env.VITE_API_BASE_URL, apiRoutes);
 
   if (!isProd) {
     const { createServer: createViteServer } = require("vite");
