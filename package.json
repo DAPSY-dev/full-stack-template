@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "postinstall": "npx playwright install",
-    "dev": "cross-env NODE_ENV=development node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
     "build": "vite build",
     "lint": "eslint .",
     "lint:server": "eslint ./server",
@@ -36,6 +36,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
+    "nodemon": "^3.1.10",
     "playwright": "^1.53.1",
     "sass-embedded": "^1.77.8",
     "vite": "^5.4.0",

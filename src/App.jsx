@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
 import { API_ENDPOINTS } from "./config/api-config.js";
 
+const ERRORS = {
+  REQUIRED: "This field is required.",
+  INVALID_EMAIL: "The email address is invalid.",
+};
+
 function App() {
   const [users, setUsers] = useState([]);
+  const [errors, setErrors] = useState({});
 
   useEffect(() => {
     const controller = new AbortController();
@@ -42,15 +48,20 @@ function App() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setUsers((prevState) => [
-          ...prevState,
-          {
-            id: data.id,
-            username: data.username,
-            email: data.email,
-          },
-        ]);
-        formElement.reset();
+        if (data.error) {
+          setErrors(data.error.fields);
+        } else {
+          setErrors({});
+          setUsers((prevState) => [
+            ...prevState,
+            {
+              id: data.id,
+              username: data.username,
+              email: data.email,
+            },
+          ]);
+          formElement.reset();
+        }
       })
       .catch((error) => console.error(error));
   };
@@ -64,6 +75,7 @@ function App() {
         method="POST"
         onSubmit={handleSubmit}
         autoComplete="off"
+        noValidate
       >
         <fieldset>
           <legend>New user</legend>
@@ -76,11 +88,13 @@ function App() {
               autoComplete="username"
               required
             />
+            {errors.username && <small>{ERRORS[errors.username]}</small>}
           </label>
 
           <label>
             Email
             <input type="email" name="email" autoComplete="email" required />
+            {errors.email && <small>{ERRORS[errors.email]}</small>}
           </label>
 
           <button type="submit">Add</button>
